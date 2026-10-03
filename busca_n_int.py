@@ -12,7 +12,7 @@ def buscar_maior_inteiro_com_recursividade(lista):
         return lista[0]
     else:
         max_restante = buscar_maior_inteiro_com_recursividade(lista[1:])
-        return lista[0] if lista[0] > max_restante else max_restante
+        return lista[0] if lista[0] > max_restante else max_restante # Return com comparação direta do primeiro elemento com o máximo do restante da lista
 buscar_maior_inteiro_com_recursividade([3, 5, 2, 8, 1])
 print(buscar_maior_inteiro_com_recursividade([3, 5, 2, 8, 1]))  # Saída: 8
     
